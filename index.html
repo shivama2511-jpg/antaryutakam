@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My T-shirt Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Antaryutakam
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="products">
+            <!-- Panda Tee -->
+            <div class="product">
+                <img src="images/tshirt1.jpg" alt="Panda Tee">
+                <h2>Panda Tee</h2>
+                <p>Price: ₹499</p>
+                <button onclick="addToCart('Panda Tee', 499,'images/tshirt1.jpg')">Add to Cart</button>
+            </div>
+
+            <!-- The Boys Tee -->
+            <div class="product">
+                <img src="images/tshirt2.jpg" alt="The Boys Tee">
+                <h2>The Boys Tee</h2>
+                <p>Price: ₹599</p>
+                <button onclick="addToCart('The Boys Tee', 599,'images/tshirt2.jpg')">Add to Cart</button>
+            </div>
+
+            <!-- Extra Example Tee -->
+            <div class="product">
+                <img src="images/tshirt3.jpg" alt="Gojo tee">
+                <h2>Gojo Tee</h2>
+                <p>Price: ₹699</p>
+                <button onclick="addToCart('Gojo Tee', 699,'images/tshirt3.jpg')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My T-shirt Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
